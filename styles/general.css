@@ -1,0 +1,148 @@
+/* Box sizing rules */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr-primary: hsl(126, 100%, 24%);
+  --clr-primary-darker: hsl(126, 100%, 20%);
+
+  --clr-primary-heading: hsl(125, 100%, 7%);
+  --clr-text: hsl(46, 11%, 23%);
+  --clr-primary-lighter: #d6edd0;
+  --clr-bg-icon: hsl(90, 90%, 80%);
+  --clr-bg-box: hsl(92, 95%, 86%);
+  --clr-primary-dark: #50584f;
+  --clr-brown-green: #1c2211;
+  --clr-gray-dark: #959b96;
+  --clr-gray-lighter-100: hsl(140, 3%, 95%);
+  --clr-gray-lighter-200: hsl(140, 3%, 87%);
+  --clr-gold-brown-100: #302c1f;
+  --clr-gold-brown-200: #343025;
+  --clr-gray-light: #737c75;
+  --clr-bg-cta: #eee;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* CLASSES */
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  color: #fff;
+  border-radius: 100vmax;
+  padding: 0.8rem 1.6rem;
+  background-color: var(--clr-primary);
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: var(--clr-primary-darker);
+}
+
+.btn--lighter:link,
+.btn--lighter:visited {
+  border-radius: 100vmax;
+  padding: 0.8rem 1.6rem;
+  background-color: var(--clr-gray-lighter-100);
+  color: var(--clr-text);
+}
+
+.btn--lighter:hover,
+.btn--lighter:active {
+  background-color: var(--clr-gray-lighter-200);
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  margin-right: 0.6rem;
+}
+
+/* UTILITIES   */
+.container {
+  --max-width: 120rem;
+  --padding: 1.6rem;
+
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
+  margin-inline: auto;
+}
