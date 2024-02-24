@@ -146,3 +146,60 @@ select {
   width: min(var(--max-width), 100% - (var(--padding) * 2));
   margin-inline: auto;
 }
+
+.section-mb-md {
+  margin-bottom: 4.8rem;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem;
+}
+
+.margin-bottom-lg {
+  margin-bottom: 5.2;
+}
+
+.margin-bottom-xxs {
+  margin-bottom: 1.6rem;
+}
+
+.margin-bottom-xs {
+  margin-bottom: 2.4rem;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 3rem;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem;
+}
+
+.margin-right-md {
+  margin-right: 4.8rem;
+}
+
+.margin-right-xxs {
+  margin-right: 1rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.text-color-primary-darker {
+  color: var(--clr-primary-darker);
+}
+
+.text-color-basic {
+  color: var(--clr-text);
+}
+
+.text-color-primary {
+  color: var(--clr-primary) !important;
+}
+
+.bg-color-cta {
+  background-color: var(--clr-bg-cta);
+}
