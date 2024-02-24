@@ -315,6 +315,12 @@
   font-weight: 500;
 }
 
+.cta-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
 /* SERVICES-EMAIL-ADDRESS */
 
 .subscribe-title {
