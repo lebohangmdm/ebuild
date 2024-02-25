@@ -4,6 +4,7 @@
 .header {
   padding-block: 2.4rem;
   position: relative;
+  margin-bottom: 3.6rem;
 }
 
 .nav-container {
@@ -336,7 +337,7 @@
 
 .email-box input {
   display: inline-block;
-  width: auto;
+  max-width: 450px;
   font-size: 1.4rem;
   border: 1px solid #dad5c6;
   border-radius: 9px;
