@@ -203,3 +203,62 @@
     margin-right: 1.6rem;
   }
 }
+
+@media (min-width: 59em) {
+  .features-list li {
+    flex: 1 1 20%;
+  }
+
+  .features-list li:nth-child(6),
+  .features-list li:nth-child(7) {
+    margin-inline: auto;
+  }
+
+  .primary-heading {
+    font-size: 6.4rem;
+    color: var(--clr-primary-heading);
+    letter-spacing: -0.75px;
+    line-height: 1;
+    margin-bottom: 3.6rem;
+  }
+
+  .heading-secondary {
+    font-size: 4rem;
+  }
+
+  .section-mb-md {
+    margin-bottom: 8rem;
+  }
+
+  .how-it-works {
+    row-gap: 8rem;
+  }
+
+  .box {
+    padding: 3.6rem 3rem;
+  }
+
+  .section-cta {
+    padding-block: 3.6rem;
+    padding-inline: 3.6rem;
+  }
+
+  .cta {
+    background-image: url("/images/Nora's\ model.png");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  .cta-text-box {
+    width: 50%;
+  }
+
+  .cta-img {
+    display: block;
+  }
+
+  .services {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
