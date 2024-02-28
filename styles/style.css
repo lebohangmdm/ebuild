@@ -8,7 +8,7 @@
 }
 
 .nav-container {
-  --max-width: 120rem;
+  --max-width: 115rem;
   --padding: 1.6rem;
 
   width: min(var(--max-width), 100% - (var(--padding) * 2));
